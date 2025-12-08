@@ -20,7 +20,7 @@ model = dict(
 
 preprocessing = dict(
     text_features_extractor=dict(
-        type="HubertSoft",
+        type="ContentVec",
     ),
     pitch_extractor=dict(
         type="RMVPitchExtractor",
