@@ -8,7 +8,7 @@ _base_ = [
 ]
 
 speaker_mapping = {
-    "placeholder": 0,
+    "Kioshi_AI": 0,
 }
 
 model = dict(
@@ -20,10 +20,10 @@ model = dict(
 
 preprocessing = dict(
     text_features_extractor=dict(
-        type="ContentVec",
+        type="HubertSoft",
     ),
     pitch_extractor=dict(
-        type="ParselMouthPitchExtractor",
+        type="RMVPitchExtractor",
         keep_zeros=False,
         f0_min=40.0,
         f0_max=1600.0,
